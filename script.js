@@ -1,4 +1,3 @@
-
 const questions = [
     { question: "Quel est le premier pilier de l’Islam ?", answers: ["La prière", "Le jeûne", "La Chahada", "L’aumône"], correct: "La Chahada" },
     { question: "Combien y a-t-il de Rak'ats dans la prière du Fajr ?", answers: ["2", "4", "3", "5"], correct: "2" }
