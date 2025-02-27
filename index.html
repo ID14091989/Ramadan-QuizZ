@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramadhan Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Ramadan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="quiz-container">
-        <h1>Ramadhan Quiz</h1>
-        <p id="question">Appuyez sur "Afficher la question" pour commencer</p>
-        
-        <button id="show-question-btn">Afficher la question</button>
-        <div id="choices" style="display: none;"></div>
-        
-        <button id="next-btn" style="display: none;">Suivant</button>
-    </div>
 
-    <script src="script.js"></script>
+<div id="quiz-container">
+    <h2 id="question">Chargement...</h2>
+    <p id="answer"></p>
+    <button onclick="showAnswer()">Afficher la réponse</button>
+    <button onclick="nextQuestion()">Question suivante</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
