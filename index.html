@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="quiz-container">
+        <h1>Quiz Ramadan</h1>
+        
+        <!-- Barre de progression -->
+        <div id="progress-container">
+            <div id="progress-bar">0%</div>
+        </div>
 
-<div id="quiz-container">
-    <h2 id="question">Chargement...</h2>
-    <p id="answer"></p>
-    <button onclick="showAnswer()">Afficher la réponse</button>
-    
-    <div id="buttons-container">
-        <button onclick="prevQuestion()">❮ Question précédente</button>
-        <button onclick="nextQuestion()">Question suivante ❯</button>
+        <h2 id="question">Question ici</h2>
+        <p id="answer"></p>
+
+        <button onclick="showAnswer()">Afficher la réponse</button>
+        <button onclick="prevQuestion()">Question précédente</button>
+        <button onclick="nextQuestion()">Question suivante</button>
     </div>
-</div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
