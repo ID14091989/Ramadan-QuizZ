@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Ramadhan</title>
+    <title>Quiz Ramadan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="quiz-container">
+        <h1>Quiz Ramadan</h1>
 
-<div id="quiz-container">
-    <h2 id="question">Question ici...</h2>
-    <p id="answer"></p>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
 
-    <button id="prev-btn">Question précédente</button>
-    <button id="show-answer-btn">Afficher la réponse</button>
-    <button id="next-btn">Question suivante</button>
+        <p id="question">Question s'affichera ici</p>
+        <p id="answer">Cliquez sur "Afficher la réponse" pour voir la réponse.</p>
 
-    <div id="progress-container">
-        <div id="progress-bar"></div>
+        <!-- Boutons alignés -->
+        <div class="button-container">
+            <button id="prev-btn">⬅ Question précédente</button>
+            <button id="show-answer-btn">Afficher la réponse</button>
+            <button id="next-btn">Question suivante ➡</button>
+        </div>
     </div>
-</div>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
