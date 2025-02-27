@@ -35,10 +35,16 @@ questions.sort(() => Math.random() - 0.5);
 
 let currentQuestionIndex = 0;
 
+function updateProgressBar() {
+    let progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+    document.getElementById("progress-bar").style.width = progress + "%";
+}
+
 function showQuestion() {
     let q = questions[currentQuestionIndex];
     document.getElementById("question").textContent = q.question;
     document.getElementById("answer").textContent = "";
+    updateProgressBar();
 }
 
 function showAnswer() {
@@ -46,13 +52,17 @@ function showAnswer() {
 }
 
 document.getElementById("next-btn").onclick = () => {
-    if (currentQuestionIndex < questions.length - 1) currentQuestionIndex++;
-    showQuestion();
+    if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        showQuestion();
+    }
 };
 
 document.getElementById("prev-btn").onclick = () => {
-    if (currentQuestionIndex > 0) currentQuestionIndex--;
-    showQuestion();
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        showQuestion();
+    }
 };
 
 document.getElementById("show-answer-btn").onclick = showAnswer;
