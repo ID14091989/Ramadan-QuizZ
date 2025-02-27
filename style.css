@@ -1,65 +1,52 @@
-/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    text-align: center;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Conteneur du quiz */
 #quiz-container {
-    width: 50%;
-    margin: 5% auto;
     background: white;
+    width: 80%;
+    max-width: 600px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-/* Titre */
-h1 {
-    font-size: 24px;
+h2 {
     color: #333;
 }
 
-/* Boutons */
+p {
+    font-size: 18px;
+    color: #555;
+}
+
 button {
-    background-color: #007bff;
+    background: linear-gradient(to bottom, #007bff, #0056b3);
     color: white;
+    font-size: 16px;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease-in-out, transform 0.2s ease;
+    box-shadow: 0 4px #003f7f;
+    transition: all 0.2s;
+}
+
+button:active {
+    box-shadow: 0 2px #003f7f;
+    transform: translateY(2px);
 }
 
 button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-/* Style des choix */
-#choices {
-    margin-top: 20px;
-}
-
-.choice-btn {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-    background-color: #f8f9fa;
-    border: 1px solid #007bff;
-    color: #007bff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.choice-btn:hover {
-    background-color: #007bff;
-    color: white;
-    transform: scale(1.05);
+    background: linear-gradient(to bottom, #0056b3, #003f7f);
 }
