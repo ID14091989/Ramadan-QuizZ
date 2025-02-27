@@ -35,11 +35,13 @@ questions.sort(() => Math.random() - 0.5);
 
 let currentQuestionIndex = 0;
 
+// ✅ Mise à jour de la barre de progression
 function updateProgressBar() {
     let progress = ((currentQuestionIndex + 1) / questions.length) * 100;
     document.getElementById("progress-bar").style.width = progress + "%";
 }
 
+// ✅ Affichage de la question
 function showQuestion() {
     let q = questions[currentQuestionIndex];
     document.getElementById("question").textContent = q.question;
@@ -47,24 +49,27 @@ function showQuestion() {
     updateProgressBar();
 }
 
+// ✅ Affichage de la réponse
 function showAnswer() {
     document.getElementById("answer").textContent = questions[currentQuestionIndex].answer;
 }
 
-document.getElementById("next-btn").addEventListener("click", () => {
+// ✅ Gestion des boutons
+document.getElementById("next-btn").onclick = () => {
     if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
         showQuestion();
     }
-});
+};
 
-document.getElementById("prev-btn").addEventListener("click", () => {
+document.getElementById("prev-btn").onclick = () => {
     if (currentQuestionIndex > 0) {
         currentQuestionIndex--;
         showQuestion();
     }
-});
+};
 
-document.getElementById("show-answer-btn").addEventListener("click", showAnswer);
+document.getElementById("show-answer-btn").onclick = showAnswer;
 
+// ✅ Afficher la première question au chargement
 showQuestion();
