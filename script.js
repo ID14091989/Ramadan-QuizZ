@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "Quels sont les mérites du mois de jeûne de ramadhan ?",
+        question: "Quels sont les mérites du mois de jeûne de Ramadhan ?",
         answer: "Le mois du jeûne de ramadhan est un moyen de parvenir à la crainte révérencielle d'Allah (at-taqwa) ainsi qu'à la piété. Il est également une expiation des péchés antérieurs pour la personne qui l'observe avec foi et espérance en la récompense d'Allah."
     },
     {
@@ -9,155 +9,143 @@ const questions = [
     },
     {
         question: "Par quels moyens sont déterminés le début et la fin du mois de Ramadhan ?",
-        answer: "Le début et la fin du mois de Ramadhan est déterminé par deux moyens : soit par l'observation du nouveau croissant de lune marquant le début du nouveau mois lunaire, soit par le fait de compléter trente jours du mois si l'observation du nouveau croissant est impossible."
+        answer: "Le début et la fin du mois de Ramadhan est déterminé par deux moyens : soit par l'observation du nouveau croissant de lune, soit par le fait de compléter trente jours du mois si l'observation du nouveau croissant est impossible."
     },
     {
         question: "Qui a l'obligation de jeûner le mois de Ramadhan ?",
-        answer: "Les personnes qui doivent jeûner sont celles qui sont musulmanes, douées de raison, pubères, résidentes, en capacité physique de jeûner, et qui ne sont pas frappées d’un empêchement (menstruations, maladie grave, etc.)."
+        answer: "La personne pour qui il est obligatoire de jeûner doit être musulmane, douée de raison, pubère, résidente, en capacité physique d'effectuer le jeûne et ne pas être frappée d'un empêchement au jeûne."
     },
     {
         question: "À quel moment dois-je mettre l'intention de jeûner ?",
-        answer: "Tu dois mettre l'intention de jeûner au cours de la nuit précédant la journée de jeûne, avant l'apparition de l'aube."
+        answer: "L'intention doit être mise au cours de la nuit précédant la journée de jeûne, avant l'apparition de l'aube. Le mieux est de la mettre au moment du Sahour."
     },
     {
         question: "Qu'est-ce qui invalide le jeûne ?",
-        answer: "Les choses qui invalident le jeûne sont : les rapports charnels, manger ou boire volontairement, l’éjaculation avec désir, se faire vomir volontairement, se faire pratiquer une saignée (Hijama), les saignements des menstrues et post-accouchement."
+        answer: "Avoir un rapport charnel, manger ou boire volontairement, l'éjaculation avec désir, se faire vomir volontairement, pratiquer une saignée (Hijama), les menstruations et les lochies."
     },
     {
         question: "Quel est le jugement au sujet de la personne qui rompt volontairement son jeûne sans en avoir l'excuse ?",
-        answer: "Rompre le jeûne sans excuse valable est un péché capital. Celui qui le fait doit se repentir et rattraper le jour manqué."
+        answer: "C'est un péché capital. Elle doit se repentir et rattraper son jour de jeûne."
     },
     {
-        question: "Que doit faire la personne qui n'a pas jeûné en raison d'une maladie passagère ou d'un voyage ?",
-        answer: "Elle doit rattraper les jours non jeûnés après Ramadhan, sans avoir besoin de nourrir des pauvres."
+        question: "Que doit faire la personne qui n'a pas jeûné en raison d'une incapacité ou maladie passagère ?",
+        answer: "Elle doit uniquement rattraper les jours non jeûnés en dehors du mois de Ramadhan."
     },
     {
-        question: "Que doit faire la personne souffrant d'une maladie chronique l'empêchant de jeûner ?",
-        answer: "Elle n'est pas tenue de jeûner ni de rattraper les jours, mais doit nourrir un pauvre par jour non jeûné."
+        question: "Que doit faire la personne souffrant d'une maladie chronique ou étant dans l'incapacité continuelle de jeûner ?",
+        answer: "Elle doit nourrir un pauvre par jour de jeûne non accompli."
     },
     {
-        question: "Si je saigne du nez involontairement pendant mon jeûne, cela l’invalide-t-il ?",
-        answer: "Non, le jeûne reste valide, car ce saignement est indépendant de la volonté du jeûneur."
+        question: "Si je n’ai pas jeûné en début de journée pour une cause valable, dois-je continuer à jeûner si cette cause disparaît ?",
+        answer: "Non, mais il faudra rattraper ce jour après Ramadhan."
     },
     {
-        question: "Une piqûre contenant des éléments nutritifs invalide-t-elle le jeûne ?",
-        answer: "Oui, car elle nourrit le corps comme la nourriture et la boisson."
+        question: "Que se passe-t-il si je mange ou bois par oubli ?",
+        answer: "Le jeûne reste valide, car c’est Allah qui a nourri et abreuvé le jeûneur par Sa miséricorde."
     },
     {
-        question: "Dois-je jeûner si je voyage pendant Ramadhan ?",
-        answer: "Tu as le choix. Si le jeûne est trop difficile, tu peux le reporter après Ramadhan."
+        question: "Un enfant de 12 ou 13 ans est-il dans l'obligation de jeûner ?",
+        answer: "Non, sauf s’il est pubère, ce qui peut être déterminé par l’apparition des menstrues, l’éjaculation, la pilosité ou l’âge de 15 ans."
     },
     {
-        question: "Puis-je voyager uniquement pour éviter de jeûner ?",
-        answer: "Non, c’est une ruse interdite et ton jeûne reste obligatoire."
+        question: "Puis-je me maquiller, me parfumer ou utiliser du siwak pendant le jeûne ?",
+        answer: "Oui, mais une femme ne doit pas sortir maquillée ou parfumée en présence d'hommes étrangers."
     },
     {
-        question: "Le fait de commettre un péché annule-t-il le jeûne ?",
+        question: "Puis-je me rafraîchir ou me baigner durant le jeûne ?",
+        answer: "Oui, à condition d'éviter que l'eau ne pénètre dans la gorge."
+    },
+    {
+        question: "Une prise de sang ou un don de sang invalide-t-il le jeûne ?",
+        answer: "Une prise de sang non, mais un don de sang peut être assimilé à une saignée et invalider le jeûne."
+    },
+    {
+        question: "Si je saigne du nez involontairement, cela invalide-t-il mon jeûne ?",
+        answer: "Non, car cela n'est pas intentionnel."
+    },
+    {
+        question: "Une injection intraveineuse contenant des éléments nutritifs invalide-t-elle le jeûne ?",
+        answer: "Oui, car cela nourrit le corps comme la nourriture et la boisson."
+    },
+    {
+        question: "Est-il préférable de jeûner ou de ne pas jeûner en voyage ?",
+        answer: "Cela dépend des capacités de chacun. Si c’est difficile, il est préférable de ne pas jeûner."
+    },
+    {
+        question: "Si quelqu'un voyage juste pour ne pas jeûner, son jeûne est-il valide ?",
+        answer: "Non, car ce voyage est une ruse pour éviter le jeûne."
+    },
+    {
+        question: "Commettre des péchés annule-t-il le jeûne ?",
         answer: "Non, mais cela diminue sa récompense."
     },
     {
-        question: "Un homme peut-il embrasser sa femme pendant Ramadhan ?",
-        answer: "Oui, tant qu’il maîtrise son désir et que cela ne mène pas à un rapport intime."
+        question: "Embrasser son épouse invalide-t-il le jeûne ?",
+        answer: "Non, sauf si cela mène à l’éjaculation."
     },
     {
-        question: "Dois-je aussi m’abstenir d’avoir des rapports la nuit pendant Ramadhan ?",
-        answer: "Non, les rapports sont permis entre le coucher et l’aube."
+        question: "Faut-il s’abstenir de rapports conjugaux aussi la nuit pendant Ramadhan ?",
+        answer: "Non, il est permis d’avoir des rapports conjugaux la nuit."
     },
     {
-        question: "Le travail ou les examens justifient-ils la rupture du jeûne ?",
-        answer: "Non, sauf en cas d’extrême nécessité."
+        question: "Le travail ou les examens permettent-ils de ne pas jeûner ?",
+        answer: "Non, ce ne sont pas des excuses valables."
     },
     {
-        question: "Que doit-on faire au moment de la rupture du jeûne ?",
-        answer: "Il faut se hâter de rompre et invoquer Allah, car c’est un moment d’exaucement."
+        question: "Que faire au moment de la rupture du jeûne ?",
+        answer: "Il faut se hâter de rompre le jeûne et invoquer Allah, car c'est un moment d'exaucement."
     },
     {
-        question: "La prière de Tarawih est-elle obligatoire ?",
-        answer: "Non, elle est surérogatoire mais fortement recommandée."
+        question: "Est-il obligatoire d’assister à la prière de Tarawih ?",
+        answer: "Non, mais c'est une grande récompense."
     },
     {
-        question: "Puis-je lire le Coran en tenant le Mushaf pendant la prière de Tarawih ?",
-        answer: "Oui, si nécessaire, par exemple pour aider l’imam en cas d’erreur."
+        question: "Peut-on tenir un Coran pendant la prière de Tarawih ?",
+        answer: "Il est préférable de ne pas le faire sauf si nécessaire."
     },
     {
-        question: "La Nuit du Destin est-elle toujours le 27e jour de Ramadhan ?",
-        answer: "Non, elle peut être n’importe quelle nuit impaire des dix dernières nuits."
+        question: "La nuit du destin tombe-t-elle toujours le 27 ?",
+        answer: "Non, elle peut tomber dans les 10 dernières nuits impaires."
     },
     {
         question: "Quand doit-on donner la Zakat al-Fitr ?",
-        answer: "Avant la prière de l'Aïd, idéalement le matin du jour de l'Aïd."
+        answer: "Avant la prière de l’Aïd, idéalement le matin du jour du ‘Id."
     },
     {
         question: "Peut-on donner la Zakat al-Fitr en argent ?",
-        answer: "Non, elle doit être donnée sous forme de nourriture de base (riz, dattes, etc.)."
+        answer: "Non, elle doit être donnée sous forme d’aliments."
     },
     {
         question: "La prière de l'Aïd est-elle obligatoire ?",
-        answer: "Certains savants disent qu’elle est obligatoire, d’autres qu’elle est fortement recommandée."
-    },
-    {
-        question: "Une personne qui mange par erreur doit-elle rattraper son jeûne ?",
-        answer: "Non, son jeûne reste valide."
-    },
-    {
-        question: "Un enfant de 12 ans doit-il obligatoirement jeûner ?",
-        answer: "Non, sauf s'il est pubère."
-    },
-    {
-        question: "Puis-je me maquiller et me parfumer en journée pendant Ramadhan ?",
-        answer: "Oui, tant que cela ne cause pas de tentation et que l’odeur ne se propage pas aux hommes étrangers."
-    },
-    {
-        question: "Puis-je me rafraîchir en me baignant ou en prenant une douche ?",
-        answer: "Oui, tant que tu évites d’avaler de l’eau."
-    },
-    {
-        question: "Une prise de sang invalide-t-elle le jeûne ?",
-        answer: "Non, sauf en cas de don de sang abondant, qui affaiblit le corps."
+        answer: "Les savants divergent, mais elle est fortement recommandée."
     }
 ];
-
-// Fonction pour mélanger les questions
-function shuffleQuestions() {
-    for (let i = questions.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [questions[i], questions[j]] = [questions[j], questions[i]];
-    }
-}
 
 let currentQuestionIndex = 0;
 
 function showQuestion() {
-    if (currentQuestionIndex < questions.length) {
-        let q = questions[currentQuestionIndex];
-        document.getElementById("question").textContent = q.question;
-        document.getElementById("answer").textContent = "";
-        document.getElementById("show-answer").style.display = "block";
-        document.getElementById("next-btn").style.display = "none";
-    } else {
-        document.getElementById("quiz-container").innerHTML = `
-            <h2>Quiz terminé !</h2>
-            <button id="restart-btn" onclick="restartQuiz()">Recommencer</button>
-        `;
-    }
+    let q = questions[currentQuestionIndex];
+    document.getElementById("question").textContent = q.question;
+    document.getElementById("answer").textContent = ""; // Cache la réponse
 }
 
 function showAnswer() {
-    document.getElementById("answer").textContent = questions[currentQuestionIndex].answer;
-    document.getElementById("show-answer").style.display = "none";
-    document.getElementById("next-btn").style.display = "block";
+    let q = questions[currentQuestionIndex];
+    document.getElementById("answer").textContent = q.answer;
 }
 
 function nextQuestion() {
-    currentQuestionIndex++;
-    showQuestion();
+    if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        showQuestion();
+    }
 }
 
-function restartQuiz() {
-    currentQuestionIndex = 0;
-    shuffleQuestions();
-    showQuestion();
+function prevQuestion() {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        showQuestion();
+    }
 }
 
-shuffleQuestions();
 showQuestion();
