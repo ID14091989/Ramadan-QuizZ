@@ -1,151 +1,60 @@
 const questions = [
-    {
-        question: "Quels sont les mérites du mois de jeûne de Ramadhan ?",
-        answer: "Le mois du jeûne de ramadhan est un moyen de parvenir à la crainte révérencielle d'Allah (at-taqwa) ainsi qu'à la piété. Il est également une expiation des péchés antérieurs pour la personne qui l'observe avec foi et espérance en la récompense d'Allah."
-    },
-    {
-        question: "En quoi consiste le jeûne ?",
-        answer: "Dans la langue arabe, as-siyâm signifie l'abstinence. Dans la législation islamique, il s'agit de s'abstenir des choses qui font rompre le jeûne avec la présence de l'intention, et ce, depuis l'apparition de l'aube jusqu'au coucher du soleil."
-    },
-    {
-        question: "Par quels moyens sont déterminés le début et la fin du mois de Ramadhan ?",
-        answer: "Le début et la fin du mois de Ramadhan est déterminé par deux moyens : soit par l'observation du nouveau croissant de lune, soit par le fait de compléter trente jours du mois si l'observation du nouveau croissant est impossible."
-    },
-    {
-        question: "Qui a l'obligation de jeûner le mois de Ramadhan ?",
-        answer: "La personne pour qui il est obligatoire de jeûner doit être musulmane, douée de raison, pubère, résidente, en capacité physique d'effectuer le jeûne et ne pas être frappée d'un empêchement au jeûne."
-    },
-    {
-        question: "À quel moment dois-je mettre l'intention de jeûner ?",
-        answer: "L'intention doit être mise au cours de la nuit précédant la journée de jeûne, avant l'apparition de l'aube. Le mieux est de la mettre au moment du Sahour."
-    },
-    {
-        question: "Qu'est-ce qui invalide le jeûne ?",
-        answer: "Avoir un rapport charnel, manger ou boire volontairement, l'éjaculation avec désir, se faire vomir volontairement, pratiquer une saignée (Hijama), les menstruations et les lochies."
-    },
-    {
-        question: "Quel est le jugement au sujet de la personne qui rompt volontairement son jeûne sans en avoir l'excuse ?",
-        answer: "C'est un péché capital. Elle doit se repentir et rattraper son jour de jeûne."
-    },
-    {
-        question: "Que doit faire la personne qui n'a pas jeûné en raison d'une incapacité ou maladie passagère ?",
-        answer: "Elle doit uniquement rattraper les jours non jeûnés en dehors du mois de Ramadhan."
-    },
-    {
-        question: "Que doit faire la personne souffrant d'une maladie chronique ou étant dans l'incapacité continuelle de jeûner ?",
-        answer: "Elle doit nourrir un pauvre par jour de jeûne non accompli."
-    },
-    {
-        question: "Si je n’ai pas jeûné en début de journée pour une cause valable, dois-je continuer à jeûner si cette cause disparaît ?",
-        answer: "Non, mais il faudra rattraper ce jour après Ramadhan."
-    },
-    {
-        question: "Que se passe-t-il si je mange ou bois par oubli ?",
-        answer: "Le jeûne reste valide, car c’est Allah qui a nourri et abreuvé le jeûneur par Sa miséricorde."
-    },
-    {
-        question: "Un enfant de 12 ou 13 ans est-il dans l'obligation de jeûner ?",
-        answer: "Non, sauf s’il est pubère, ce qui peut être déterminé par l’apparition des menstrues, l’éjaculation, la pilosité ou l’âge de 15 ans."
-    },
-    {
-        question: "Puis-je me maquiller, me parfumer ou utiliser du siwak pendant le jeûne ?",
-        answer: "Oui, mais une femme ne doit pas sortir maquillée ou parfumée en présence d'hommes étrangers."
-    },
-    {
-        question: "Puis-je me rafraîchir ou me baigner durant le jeûne ?",
-        answer: "Oui, à condition d'éviter que l'eau ne pénètre dans la gorge."
-    },
-    {
-        question: "Une prise de sang ou un don de sang invalide-t-il le jeûne ?",
-        answer: "Une prise de sang non, mais un don de sang peut être assimilé à une saignée et invalider le jeûne."
-    },
-    {
-        question: "Si je saigne du nez involontairement, cela invalide-t-il mon jeûne ?",
-        answer: "Non, car cela n'est pas intentionnel."
-    },
-    {
-        question: "Une injection intraveineuse contenant des éléments nutritifs invalide-t-elle le jeûne ?",
-        answer: "Oui, car cela nourrit le corps comme la nourriture et la boisson."
-    },
-    {
-        question: "Est-il préférable de jeûner ou de ne pas jeûner en voyage ?",
-        answer: "Cela dépend des capacités de chacun. Si c’est difficile, il est préférable de ne pas jeûner."
-    },
-    {
-        question: "Si quelqu'un voyage juste pour ne pas jeûner, son jeûne est-il valide ?",
-        answer: "Non, car ce voyage est une ruse pour éviter le jeûne."
-    },
-    {
-        question: "Commettre des péchés annule-t-il le jeûne ?",
-        answer: "Non, mais cela diminue sa récompense."
-    },
-    {
-        question: "Embrasser son épouse invalide-t-il le jeûne ?",
-        answer: "Non, sauf si cela mène à l’éjaculation."
-    },
-    {
-        question: "Faut-il s’abstenir de rapports conjugaux aussi la nuit pendant Ramadhan ?",
-        answer: "Non, il est permis d’avoir des rapports conjugaux la nuit."
-    },
-    {
-        question: "Le travail ou les examens permettent-ils de ne pas jeûner ?",
-        answer: "Non, ce ne sont pas des excuses valables."
-    },
-    {
-        question: "Que faire au moment de la rupture du jeûne ?",
-        answer: "Il faut se hâter de rompre le jeûne et invoquer Allah, car c'est un moment d'exaucement."
-    },
-    {
-        question: "Est-il obligatoire d’assister à la prière de Tarawih ?",
-        answer: "Non, mais c'est une grande récompense."
-    },
-    {
-        question: "Peut-on tenir un Coran pendant la prière de Tarawih ?",
-        answer: "Il est préférable de ne pas le faire sauf si nécessaire."
-    },
-    {
-        question: "La nuit du destin tombe-t-elle toujours le 27 ?",
-        answer: "Non, elle peut tomber dans les 10 dernières nuits impaires."
-    },
-    {
-        question: "Quand doit-on donner la Zakat al-Fitr ?",
-        answer: "Avant la prière de l’Aïd, idéalement le matin du jour du ‘Id."
-    },
-    {
-        question: "Peut-on donner la Zakat al-Fitr en argent ?",
-        answer: "Non, elle doit être donnée sous forme d’aliments."
-    },
-    {
-        question: "La prière de l'Aïd est-elle obligatoire ?",
-        answer: "Les savants divergent, mais elle est fortement recommandée."
-    }
+    { question: "Quels sont les mérites du mois de jeûne de Ramadhan ?", answer: "Le mois du jeûne de ramadhan est un moyen de parvenir à la crainte révérencielle d'Allah (at-taqwa) ainsi qu'à la piété. Il est également une expiation des péchés antérieurs pour la personne qui l'observe avec foi et espérance en la récompense d'Allah." },
+    { question: "En quoi consiste le jeûne ?", answer: "Dans la langue arabe, as-siyâm signifie l'abstinence. Dans la législation islamique, il s'agit de s'abstenir des choses qui font rompre le jeûne avec la présence de l'intention, et ce, depuis l'apparition de l'aube jusqu'au coucher du soleil. Le jeûne du mois de Ramadhan est le quatrième pilier de l'islam." },
+    { question: "Par quels moyens sont déterminés le début et la fin du mois de Ramadhan ?", answer: "Le début et la fin du mois de Ramadhan sont déterminés par deux moyens : soit par l'observation du nouveau croissant de lune marquant le début du nouveau mois lunaire, soit par le fait de compléter trente jours du mois si l'observation du nouveau croissant est impossible." },
+    { question: "Qui a l'obligation de jeûner le mois de Ramadhan ?", answer: "La personne pour qui il est obligatoire de jeûner le mois de Ramadhan doit réunir les conditions suivantes : être musulmane, être douée de raison, être pubère, être résident, être en capacité physique d'effectuer le jeûne et ne pas être frappé d'un empêchement au jeûne." },
+    { question: "À quel moment dois-je mettre l'intention de jeûner ?", answer: "Tu dois mettre l'intention de jeûner au cours de la nuit précédant la journée de jeûne, avant l'apparition de l'aube. Le mieux est de mettre l'intention au moment du Sahour, le repas pris avant l'aube, et nul besoin de la prononcer car l'intention est un acte du cœur." },
+    { question: "Qu'est-ce qui invalide le jeûne ?", answer: "Les choses qui invalident le jeûne sont : avoir un rapport charnel, manger ou boire volontairement et consciemment, l'éjaculation de sperme avec désir et volontairement, se faire vomir volontairement, se faire pratiquer une saignée (Hijama), les saignements des menstrues et les saignements post-accouchement (lochies)." },
+    { question: "Que doit faire la personne qui rompt volontairement son jeûne sans excuse valable ?", answer: "Rompre le jeûne durant la journée de Ramadhan sans excuse valable représente un péché capital. Il lui incombe de se repentir à Allah et de rattraper ce jour de jeûne manqué." },
+    { question: "Que doit faire une personne qui n’a pas jeûné pour raison de maladie passagère ou voyage ?", answer: "Ces personnes doivent uniquement rattraper les jours non jeûnés et n'ont pas à nourrir de pauvres en compensation, car leur maladie ou leur empêchement n'est que passager." },
+    { question: "Que doit faire la personne souffrant d'une maladie chronique ou incapable de jeûner en permanence ?", answer: "Ces personnes n'ont pas à jeûner ni à rattraper leurs jours manqués. Elles doivent en compensation nourrir un pauvre par jour de jeûne manqué." },
+    { question: "Est-ce que manger ou boire par oubli invalide le jeûne ?", answer: "Non, si une personne mange ou boit par oubli, son jeûne reste valide. C'est Allah qui l'a nourri et abreuvé." },
+    { question: "Si, involontairement, je saigne du nez, cela invalide-t-il mon jeûne ?", answer: "Non, l'écoulement de sang indépendamment de la volonté du jeûneur ne nuit en rien à la validité du jeûne." },
+    { question: "Les injections nutritives invalident-elles le jeûne ?", answer: "Oui, car elles apportent un apport nutritif au corps, semblable à la nourriture et la boisson." },
+    { question: "Un voyageur doit-il obligatoirement rompre son jeûne ?", answer: "Non, s'il n'éprouve pas de difficulté à jeûner, il peut jeûner. Mais s'il ressent une pénibilité, il est préférable qu'il rompt son jeûne." },
+    { question: "Voyager juste pour éviter le jeûne est-il permis ?", answer: "Non, c'est une tromperie et ce voyage devient illicite." },
+    { question: "Les péchés diminuent-ils la valeur du jeûne ?", answer: "Oui, bien qu'ils ne l'annulent pas, ils réduisent sa récompense." },
+    { question: "Embrasser son épouse invalide-t-il le jeûne ?", answer: "Non, sauf si cela mène à l'éjaculation ou à un rapport sexuel." },
+    { question: "L'abstinence sexuelle est-elle requise aussi bien le jour que la nuit ?", answer: "Non, les rapports sont permis la nuit, mais interdits en journée." },
+    { question: "Travailler ou passer un examen est-il une excuse pour rompre le jeûne ?", answer: "Non, ce ne sont pas des excuses légitimes." },
+    { question: "Que doit-on faire au moment de la rupture du jeûne ?", answer: "Il est recommandé de hâter la rupture du jeûne et d’invoquer Allah." },
+    { question: "La prière de Tarawih est-elle obligatoire ?", answer: "Non, elle est recommandée mais pas obligatoire." },
+    { question: "Peut-on tenir un Coran pendant Tarawih ?", answer: "Ce n'est pas recommandé, sauf si l'imam a besoin d'aide pour la récitation." },
+    { question: "La Nuit du Destin tombe-t-elle forcément le 27 ?", answer: "Non, elle peut tomber dans n'importe quelle nuit impaire des dix dernières nuits." },
+    { question: "Quand doit-on donner la Zakat al-Fitr ?", answer: "Avant la prière de l’Aïd, mais pas après." },
+    { question: "Peut-on donner la Zakat al-Fitr en argent ?", answer: "Non, elle doit être donnée en nourriture." },
+    { question: "La prière de l’Aïd est-elle obligatoire ?", answer: "Les savants ont divergé : certains la considèrent comme obligatoire, d'autres comme fortement recommandée." },
+    { question: "Se baigner en journée de jeûne est-il permis ?", answer: "Oui, tant qu’on évite d’avaler de l’eau." },
+    { question: "Faire une prise de sang invalide-t-il le jeûne ?", answer: "Non, mais donner une grande quantité de sang est déconseillé." },
+    { question: "Peut-on utiliser du siwak, du parfum ou du khôl en jeûne ?", answer: "Oui, cela n’invalide pas le jeûne." },
+    { question: "Le jeûne a-t-il des bienfaits spirituels et physiques ?", answer: "Oui, il purifie l'âme et le corps, et apporte des bienfaits spirituels et sanitaires." }
 ];
+
+// Mélanger les questions
+questions.sort(() => Math.random() - 0.5);
 
 let currentQuestionIndex = 0;
 
 function showQuestion() {
     let q = questions[currentQuestionIndex];
     document.getElementById("question").textContent = q.question;
-    document.getElementById("answer").textContent = ""; // Cache la réponse
+    document.getElementById("answer").textContent = "";
 }
 
 function showAnswer() {
-    let q = questions[currentQuestionIndex];
-    document.getElementById("answer").textContent = q.answer;
+    document.getElementById("answer").textContent = questions[currentQuestionIndex].answer;
 }
 
-function nextQuestion() {
-    if (currentQuestionIndex < questions.length - 1) {
-        currentQuestionIndex++;
-        showQuestion();
-    }
-}
+document.getElementById("next-btn").onclick = () => {
+    if (currentQuestionIndex < questions.length - 1) currentQuestionIndex++;
+    showQuestion();
+};
 
-function prevQuestion() {
-    if (currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        showQuestion();
-    }
-}
+document.getElementById("prev-btn").onclick = () => {
+    if (currentQuestionIndex > 0) currentQuestionIndex--;
+    showQuestion();
+};
+
+document.getElementById("show-answer-btn").onclick = showAnswer;
 
 showQuestion();
