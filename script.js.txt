@@ -1,0 +1,40 @@
+
+const questions = [
+    { question: "Quel est le premier pilier de l’Islam ?", answers: ["La prière", "Le jeûne", "La Chahada", "L’aumône"], correct: "La Chahada" },
+    { question: "Combien y a-t-il de Rak'ats dans la prière du Fajr ?", answers: ["2", "4", "3", "5"], correct: "2" }
+];
+
+let currentQuestionIndex = 0;
+
+function showQuestion() {
+    let q = questions[currentQuestionIndex];
+    document.getElementById("question").textContent = q.question;
+    
+    let choicesDiv = document.getElementById("choices");
+    choicesDiv.innerHTML = "";
+    
+    q.answers.forEach(answer => {
+        let btn = document.createElement("button");
+        btn.textContent = answer;
+        btn.onclick = () => checkAnswer(answer);
+        choicesDiv.appendChild(btn);
+    });
+}
+
+function checkAnswer(answer) {
+    if (answer === questions[currentQuestionIndex].correct) {
+        alert("Bonne réponse !");
+    } else {
+        alert("Mauvaise réponse !");
+    }
+    
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        alert("Quiz terminé !");
+    }
+}
+
+document.getElementById("next-btn").onclick = showQuestion;
+showQuestion();
